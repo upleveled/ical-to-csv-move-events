@@ -1,5 +1,11 @@
 # ical-to-csv-move-events
 
+## UNMAINTAINED
+
+Use [`ical-move-events`](https://github.com/upleveled/ical-move-events) instead! The bug in Google Calendar requiring CSV generation was fixed.
+
+## Overview
+
 Move all events in an iCalendar file (`.ics` file) to start at a new starting date and generate a CSV file in the Outlook format.
 
 ## Usage
@@ -23,6 +29,8 @@ yarn dev data/calendar.ics 2020-05-21
 ```
 
 ## Why convert to CSV?
+
+Short answer: Not needed anymore! Use [`ical-move-events`](https://github.com/upleveled/ical-move-events) instead!
 
 Originally, this script just generated a second iCalendar file using `ical-generator` (see [this old commit](https://github.com/upleveled/ical-to-csv-move-events/commit/60a116a9c4bcafdd48a70301c3eef267c306a2e6)), but upon importing in Google Calendar, emoji were being incorrectly interpreted:
 
